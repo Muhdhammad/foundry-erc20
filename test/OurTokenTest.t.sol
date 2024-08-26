@@ -6,9 +6,7 @@ import {Test} from "forge-std/Test.sol";
 import {DeployOurToken} from "script/DeployOurToken.s.sol";
 import {OurToken} from "src/OurToken.sol";
 
-
-contract OurTokenTest is Test{
-
+contract OurTokenTest is Test {
     OurToken public ourToken;
     DeployOurToken public deployer;
 
@@ -33,7 +31,7 @@ contract OurTokenTest is Test{
     function testAllowanceWorks() public {
         // transferfrom
         // we can give permission to someone else to transfer from our account
-        // that can be either an externally-owned account or a smart-contract account 
+        // that can be either an externally-owned account or a smart-contract account
 
         // hammad approves alice to spend on his behalf
         vm.prank(hammad);
@@ -53,7 +51,6 @@ contract OurTokenTest is Test{
     }
 
     function testAllowanceExceedsBalance() public {
-
         uint256 transferAmount = INITIAL_ALLOWANCE + 1;
 
         vm.prank(hammad);
@@ -81,10 +78,4 @@ contract OurTokenTest is Test{
         vm.expectRevert();
         ourToken.transfer(alice, largeAmount);
     }
-
-
-
-
-
-
 }
