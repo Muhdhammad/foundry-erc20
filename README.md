@@ -3,11 +3,11 @@
 ## About 
 A project to create and deploy a standard ERC20 token using Foundry and OpenZeppelin.
 ## Requirements
-[git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git): 
+[git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git):  
 Ensure Git is installed. Verify by running ```git --version```. If you see something like ```git version x.x.x```, you're all set.
 
 
-[foundry](https://getfoundry.sh/):
+[foundry](https://getfoundry.sh/):  
 Ensure Foundry is installed. Check with ```forge --version```. If you see a version string like ```forge 0.2.0 (f2518c9 2024-08-06T00:18:13.943817879Z)```, you're good to go.
 
 ## Usage
@@ -101,5 +101,5 @@ You'll see any output file called `.gas-snapshot`
 Best practice to use your `$PRIVATE_KEY` is to encode it and then use it, you should never hard copy paste your private key with the real funds in the `.env` file.
 
 ## Thanks 🙌
-Thank you for staying engaged with this project, ff you appreciated this, feel free to follow!
+Thank you for staying engaged with this project, if you appreciated this, feel free to follow!
 
